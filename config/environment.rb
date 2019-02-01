@@ -3,9 +3,15 @@ require 'hanami/setup'
 require 'hanami/model'
 require_relative '../lib/leash'
 require_relative '../apps/web/application'
+require_relative '../apps/rest/application'
+
+require "hanami/middleware/body_parser"
 
 Hanami.configure do
+  mount Rest::Application, at: '/rest'
   mount Web::Application, at: '/'
+
+  middleware.use Hanami::Middleware::BodyParser, :json
 
   model do
     ##

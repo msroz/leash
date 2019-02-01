@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
+ruby '2.5.1'
+
 gem 'rake'
 gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
 
+gem 'bcrypt'
 gem 'mysql2'
 
 group :development do
