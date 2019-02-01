@@ -1,0 +1,2 @@
+module Leash
+end

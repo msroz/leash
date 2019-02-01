@@ -1,0 +1,3 @@
+project=leash
+test=minitest
+template=erb
