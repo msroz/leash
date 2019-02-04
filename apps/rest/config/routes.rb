@@ -9,4 +9,7 @@ get '/hello', to: ->(env) {
     [ { message: 'Hello Hanami!' }.to_json ]
   ]
 }
-post '/users', to: 'users#create'
+resources :users, only: [:create]
+resources :entries, only: [:index, :show] do
+  resources :comments, only: [:index]
+end
