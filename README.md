@@ -1,6 +1,13 @@
-# Leash
+# ➿ Leash
 
-Welcome to your new Hanami project!
+![leash.jpeg](./LEASH.jpeg)
+
+Leash is a sample project, which implements web api.
+
+## Requirements
+
+- [Hanami | The web, with simplicity](http://hanamirb.org/) v1.3.1+
+- Ruby 2.5.0+
 
 ## Setup
 
