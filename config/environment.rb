@@ -4,10 +4,12 @@ require 'hanami/model'
 require_relative '../lib/leash'
 require_relative '../apps/web/application'
 require_relative '../apps/rest/application'
+require_relative '../apps/graph/application'
 
 require "hanami/middleware/body_parser"
 
 Hanami.configure do
+  mount Graph::Application, at: '/graph'
   mount Rest::Application, at: '/rest'
   mount Web::Application, at: '/'
 

@@ -7,6 +7,7 @@ gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
 
 gem 'bcrypt'
+gem 'graphql'
 gem 'mysql2'
 
 group :development do
