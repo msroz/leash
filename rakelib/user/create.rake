@@ -7,7 +7,7 @@ namespace :user do
     if result.success?
       STDOUT.puts result.user.to_h
     else
-      STDERR.puts "Error"
+      STDERR.puts "[ERROR] #{result.errors}"
     end
   end
 end
