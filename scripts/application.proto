@@ -1,0 +1,14 @@
+syntax = "proto3";
+package eco;
+
+service EchoService {
+      rpc hello(ParrotRequest) returns (ParrotResponse) {}
+}
+
+message ErrorRequest {
+      string msg = 1;
+}
+
+message ErrorResponse {
+      string msg = 1;
+}

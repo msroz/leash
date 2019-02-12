@@ -1,0 +1,26 @@
+{
+  "name": "leash",
+  "version": "1.0.0",
+  "description": "![leash.jpeg](./LEASH.jpeg)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msroz/leash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msroz/leash/issues"
+  },
+  "homepage": "https://github.com/msroz/leash#readme",
+  "dependencies": {
+    "nanographql": "^2.0.0",
+    "node-fetch": "^2.3.0"
+  }
+}
