@@ -1,10 +1,11 @@
 require "spec_helper"
 
-describe Rest::Views::ApplicationLayout do
-  let(:layout)   { Rest::Views::ApplicationLayout.new({ format: :html }, "contents") }
+RSpec.describe Rest::Views::ApplicationLayout, type: :view do
+  let(:layout)   { Rest::Views::ApplicationLayout.new(template, {}) }
   let(:rendered) { layout.render }
+  let(:template) { Hanami::View::Template.new('apps/rest/templates/application.html.erb') }
 
   it 'contains application name' do
-    rendered.must_include('Rest')
+    expect(rendered).to include('Rest')
   end
 end

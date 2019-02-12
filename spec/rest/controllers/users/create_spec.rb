@@ -1,11 +1,11 @@
 require_relative '../../../spec_helper'
 
-describe Rest::Controllers::Users::Create do
+RSpec.describe Rest::Controllers::Users::Create, type: :controller do
   let(:action) { Rest::Controllers::Users::Create.new }
   let(:params) { Hash[] }
 
-  it 'is successful' do
+  it 'is failed' do
     response = action.call(params)
-    response[0].must_equal 200
+    expect(response[0]).to eq 422
   end
 end
